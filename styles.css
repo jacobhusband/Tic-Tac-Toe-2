@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  background-color: blanchedalmond;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  font-size: 8rem;
+  font-weight: 1000;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+li:hover {
+  background-color: rgb(159, 255, 255);
+}
+
+#game-board {
+  width: 600px;
+  height: 600px;
+  background-color: beige;
+  border-radius: 5px;
+  margin: auto;
+}
+
+#winner-modal {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
